@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato — Entrevista</title>
+  <link rel="stylesheet" href="/assets/comum.css">
+  <link rel="stylesheet" href="/assets/contato.css">
+  <script src="/scripts/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Contato</h1>
+      <nav class="main-nav">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre a entrevista</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contato.html" class="active">Contato</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Alternar modo">Modo escuro</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Entre em contato</h2>
+      <p class="kicker">Deixe sua mensagem e entraremos em contato em breve</p>
+    </section>
+
+    <div class="contact-wrapper">
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" required placeholder="Seu nome completo">
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Telefone (opcional)</label>
+          <input type="tel" id="phone" name="phone" placeholder="(11) 9 1234-5678">
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Assunto</label>
+          <input type="text" id="subject" name="subject" required placeholder="Assunto da mensagem">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Sua mensagem..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-submit">Enviar mensagem</button>
+      </form>
+
+      <div class="contact-info">
+        <h3>Informações</h3>
+        <div class="info-item">
+          <strong>Entrevista</strong>
+          <p>Projeto educativo sobre a profissão de consultor comercial</p>
+        </div>
+        <div class="info-item">
+          <strong>Entrevistado</strong>
+          <p>Osvaldino Costa da Rocha<br>CPFL Serviços</p>
+        </div>
+        <div class="info-item">
+          <strong>Projeto</strong>
+          <p>2025 — Documentação de carreira profissional</p>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top:1.5rem;text-align:center;"><a href="index.html" class="btn">Voltar ao início</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Entrevista — Contato.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Obrigado pela mensagem! Em breve entraremos em contato.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
