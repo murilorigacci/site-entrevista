@@ -4,21 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contato — Entrevista</title>
-  <link rel="stylesheet" href="/assets/comum.css">
-  <link rel="stylesheet" href="/assets/contato.css">
-  <script src="/scripts/script.js" defer></script>
+
+  <!-- Caminhos corrigidos -->
+  <link rel="stylesheet" href="../assets/comum.css">
+  <link rel="stylesheet" href="../assets/contato.css">
+  <script src="../scripts/script.js" defer></script>
 </head>
+
 <body>
   <header class="site-header">
     <div class="container">
       <h1 class="site-title">Contato</h1>
+
       <nav class="main-nav">
-        <a href="/index.html">Início</a>
-        <a href="/pages/sobre.html">Sobre a entrevista</a>
-        <a href="/pages/galeria.html">Galeria</a>
-        <a href="/pages/contato.html" class="active">Contato</a>
+
+        <!-- Links corrigidos -->
+        <a href="../index.html">Início</a>
+        <a href="./contato.html" class="active">Contato</a>
+        <a href="./galeria.html">Galeria</a>
+        <a href="./sobre.html">Sobre</a>
+
       </nav>
-      <button id="theme-toggle" class="theme-toggle" aria-label="Alternar modo">Modo escuro</button>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Alternar modo">
+        Modo escuro
+      </button>
     </div>
   </header>
 
@@ -60,14 +70,17 @@
 
       <div class="contact-info">
         <h3>Informações</h3>
+
         <div class="info-item">
           <strong>Entrevista</strong>
           <p>Projeto educativo sobre a profissão de consultor comercial</p>
         </div>
+
         <div class="info-item">
           <strong>Entrevistado</strong>
           <p>Osvaldino Costa da Rocha<br>CPFL Serviços</p>
         </div>
+
         <div class="info-item">
           <strong>Projeto</strong>
           <p>2025 — Documentação de carreira profissional</p>
@@ -75,7 +88,9 @@
       </div>
     </div>
 
-    <p style="margin-top:1.5rem;text-align:center;"><a href="/index.html" class="btn">Voltar ao início</a></p>
+    <p style="margin-top:1.5rem;text-align:center;">
+      <a href="../index.html" class="btn">Voltar ao início</a>
+    </p>
   </main>
 
   <footer class="site-footer">
@@ -91,5 +106,6 @@
       this.reset();
     });
   </script>
+
 </body>
 </html>
